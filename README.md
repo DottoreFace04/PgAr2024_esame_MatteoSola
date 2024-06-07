@@ -4,10 +4,10 @@
 
  |                |                    |
  | -------------- | ------------------ |
- | Nome           | ** Matteo **       |
- | Cognome        | ** Sola **         |
- | Matricola      | ** 745491 **       |
- | Corso di Studi | ** ing info**      |
+ | Nome           | **Matteo**       |
+ | Cognome        | **Sola**         |
+ | Matricola      | **745491**       |
+ | Corso di Studi | **ing info**      |
 
  ## Moduli Implementati
 
