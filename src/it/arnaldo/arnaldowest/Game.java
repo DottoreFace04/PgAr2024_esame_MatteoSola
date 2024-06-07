@@ -254,7 +254,7 @@ public class Game {
             int n = InputData.readIntegerBetween("Seleziona un giocatore a cui sparare:\n", 0, m.size() - 1);
 
             Card card_selected;
-            int index_of_card_selected;
+            int index_of_card_selected = 0;
             boolean found = false;
             for (int i = 0; i < m.size(); i++) {
                 if(m.get(i) == Card.BANG){
@@ -287,6 +287,7 @@ public class Game {
 
                     
                     // scartare la carta BANG
+                    System.out.println(index_of_card_selected);
                     Card card_to_discard = m.remove(index_of_card_selected);  // TODO chiedere ????????????????????????????????
                     discarded_cards.add(card_to_discard);
                     gamers.get(gamer_index).setCard(m);
@@ -315,7 +316,7 @@ public class Game {
         // YesorNo
         //selecting whit if/else
         //aggiornamento vita
-        int index_of_card_selected;
+        int index_of_card_selected = 0;
         Card card_selected;
         ArrayList<Card> m = gamers.get(gamer_i_hit).getCard();
         boolean use_it = InputData.readYesOrNo("\nVuoi utilizzare una Carda MISSED");
